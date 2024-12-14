@@ -1,6 +1,5 @@
 <script lang="ts">
 	import type { I_RecorderProps, RecorderType } from '../../types/recorder.js';
-
 	const props: I_RecorderProps = $props();
 
 	const COUNTDOWN_SECONDS = 3;
