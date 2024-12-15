@@ -7,8 +7,8 @@ export async function detectSWUpdate() {
 		if (newSW) {
 			newSW.addEventListener('statechange', () => {
 				if (newSW.state === 'installed') {
-          if (confirm('New update available. Reload to update?')) {
-            newSW.postMessage({ action: 'SKIP_WAITING' });
+					if (confirm('New update available. Reload to update?')) {
+						newSW.postMessage({ action: 'SKIP_WAITING' });
 						window.location.reload();
 					}
 				}

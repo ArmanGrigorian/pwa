@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { I_RecorderProps, RecorderType } from '../../types/recorder.js';
+
 	const props: I_RecorderProps = $props();
 
 	const COUNTDOWN_SECONDS = 3;
@@ -132,10 +133,13 @@
 
 <div>
 	{#if recorder.includes('ready')}
-		<div class="fixed bottom-20 left-1/2 z-10 -translate-x-1/2 text-center" data-state={recorder}>
+		<div
+			class="fixed bottom-10 left-1/2 z-10 -translate-x-1/2 text-center lg:bottom-20"
+			data-state={recorder}
+		>
 			<button
 				aria-label="Start screen recording. Shift + R to start"
-				class="group h-16 w-16 rounded-full border-4 border-solid border-neutral-300 p-0.5 hover:cursor-pointer"
+				class="group size-8 rounded-full border-2 border-solid border-neutral-300 p-0.5 hover:cursor-pointer lg:size-16 lg:border-4"
 				onclick={startRecording}
 				type="button"
 			>
@@ -149,10 +153,10 @@
 				</span>
 			</button>
 
-			<div class="mt-4">
+			<div class="mt-1 lg:mt-4">
 				{#if recorder === 'ready' || recorder === 'ready.countdown'}
-					<p class="font-bold">Shift + R</p>
-					<p class="mt-1 text-neutral-500">To start recording</p>
+					<p class="text-sm font-bold lg:text-base">Shift + R</p>
+					<p class="text-sm text-neutral-500 lg:mt-1 lg:text-base">To start recording</p>
 				{/if}
 			</div>
 		</div>
