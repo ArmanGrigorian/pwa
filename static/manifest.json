@@ -1,8 +1,8 @@
 {
-	"id": "pwa-screen-recorder",
+	"id": "/?source=pwa_screen_recorder",
 	"name": "Screen Recorder",
 	"short_name": "Screen Recorder",
-	"description": "SvelteKit PWA Screen Recorder",
+	"description": "Simple Screen Recorder made with SvelteKit and PWA technology",
 	"start_url": "/",
 	"scope": "/",
 	"display": "standalone",
@@ -11,7 +11,13 @@
 	"lang": "en",
 	"theme_color": "#000000",
 	"background_color": "#ffffff",
+	"prefer_related_applications": false,
 	"icons": [
+		{
+			"src": "apple-touch-icon-180x180.png",
+			"sizes": "180x180",
+			"type": "image/png"
+		},
 		{
 			"src": "pwa-64x64.png",
 			"sizes": "64x64",
@@ -32,6 +38,21 @@
 			"sizes": "512x512",
 			"type": "image/png",
 			"purpose": "maskable"
+		}
+	],
+	"screenshots": [
+		{
+			"src": "desktop.webp",
+			"sizes": "1280x800",
+			"type": "image/webp",
+			"form_factor": "wide",
+			"label": "Main screen"
+		},
+		{
+			"src": "mobile.webp",
+			"sizes": "375x812",
+			"type": "image/png",
+			"form_factor": "narrow"
 		}
 	]
 }
