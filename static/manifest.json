@@ -1,11 +1,16 @@
 {
+	"id": "pwa-screen-recorder",
 	"name": "Screen Recorder",
 	"short_name": "Screen Recorder",
+	"description": "SvelteKit PWA Screen Recorder",
 	"start_url": "/",
+	"scope": "/",
 	"display": "standalone",
+	"orientation": "any",
+	"dir": "ltr",
+	"lang": "en",
 	"theme_color": "#000000",
 	"background_color": "#ffffff",
-	"description": "SvelteKit PWA Screen Recorder",
 	"icons": [
 		{
 			"src": "pwa-64x64.png",
